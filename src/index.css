@@ -1,3 +1,4 @@
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -6,8 +7,108 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  max-width: 100vw;
+  background-color: hsl(212, 45%, 89%);
+}
+div{
+  max-width: 100%;
+  margin-bottom: 8px 0 8px 0;
+}
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.card{
+  max-width: 100%;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 16px;
+  background-color: white;
+  
+}
+.card2{
+  background-color: hsl(216, 50%, 16%);
+}
+.card2 h2{
+  color: white;
+  margin-top: 8px;
+}
+img{
+  max-width: 100%;
+  border-radius: 8px;
+}
+.text{
+  text-align: center;
+}
+.text2{
+  text-align: left;
+  max-width: 100%;
+}
+p{
+  color:hsl(220, 15%, 55%);
+  font-size: 18px;
+  line-height: 30px;
+}
+h2{
+  font-size: 22px;
+  margin-bottom: 8px;
+
+}
+.etherium-container{
+  display: flex;
+  justify-content: space-between;
+  padding:8px 0;
+}
+.etherium-container-child{
+  display: flex;
+  
+  
+}
+.icon{
+  width: 18px;
+  height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  
+}
+ .etherium-container-child:first-of-type span{
+  background-image: url('./Images/icon-ethereum.svg');
+  
+}
+.etherium-container-child:first-child p{
+  color: hsl(178, 100%, 50%);
+  font-weight: bold;
+}
+.etherium-container-child span{
+  background-image: url('./Images/icon-clock.svg');
+}
+.card-footer{
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: 8px;
+}
+.card-footer img{
+  max-width: 12%;
+  height: auto;
+  margin-right: 4px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+.white-text{
+  color: white;
+}
+
+
+@media only screen and (min-width:768px){
+  .card{
+    max-width: 20%;
+    height: auto;
+    display: block;
+    margin-left:auto;
+    margin-right: auto;
+  }
 }
